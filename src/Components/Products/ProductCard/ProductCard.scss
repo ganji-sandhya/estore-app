@@ -1,0 +1,8 @@
+@import "../../../styles/sass/mixins";
+
+.product-card {
+  @include box-shadow(0, 0);
+  display: inline-flex;
+  margin: 12px;
+  border-radius: 6px;
+}
