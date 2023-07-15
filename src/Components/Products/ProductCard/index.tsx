@@ -3,6 +3,7 @@ import { Card } from "react-bootstrap";
 import './ProductCard.scss';
 
 export type productType = {
+    id?: string,
     name: string,
     price: number,
     img: string
