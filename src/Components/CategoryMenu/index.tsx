@@ -1,11 +1,19 @@
-import {FC} from 'react';
+import {FC, useEffect} from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import {useSelector} from 'react-redux';
-import {RootState} from '../../store/store';
+import {RootState, useAppDispatch} from '../../redux/store';
+import { getCategories } from '../../redux/CategorySlice/actions';
 
 const CategoryMenu: FC = () => {
 
-    const categories = useSelector((state: RootState) => state.category);
+    const categories = useSelector((state: RootState) => state.category.categories);
+
+    const dispatch = useAppDispatch();
+
+    useEffect(()=>{
+        dispatch(getCategories());
+    },[]);
+
     return (
         <Navbar bg="dark" data-bs-theme="dark" className="estore-navbar nav-underline p-1">
             <Navbar.Brand>Categories</Navbar.Brand>

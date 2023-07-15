@@ -3,7 +3,7 @@ import "./Sidebar.scss";
 import Accordions, {AccordionType} from "./Accordions";
 import { Accordion } from "react-bootstrap";
 import { useSelector } from "react-redux";
-import { RootState } from "../../store/store";
+import { RootState } from "../../redux/store";
 const Sidebar: FC = () => {
 
   const accordions: AccordionType[] = useSelector((state: RootState)=> state.accordion);
