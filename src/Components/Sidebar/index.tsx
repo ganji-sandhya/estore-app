@@ -8,8 +8,6 @@ const Sidebar: FC = () => {
 
   const accordions: AccordionType[] = useSelector((state: RootState)=> state.accordion);
 
-
-
   return (
       <div className="sidebar">
         <div className="header p-3">
