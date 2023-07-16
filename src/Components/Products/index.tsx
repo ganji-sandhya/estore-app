@@ -1,9 +1,7 @@
 import { FC } from "react";
-<<<<<<< HEAD
+
 import { RootState } from "../../redux/store";
-=======
-import { RootState } from "../../store/store";
->>>>>>> 9054437b3d9c7c26bbed51806ca2dc251bc4c0b9
+
 import ProductCard, { productType } from "./ProductCard";
 import { useSelector } from "react-redux";
 
