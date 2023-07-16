@@ -1,5 +1,7 @@
 import { FC } from "react";
-import { RootState } from "../../store/store";
+
+import { RootState } from "../../redux/store";
+
 import ProductCard, { productType } from "./ProductCard";
 import { useSelector } from "react-redux";
 
