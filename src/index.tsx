@@ -6,7 +6,7 @@ import "../node_modules/font-awesome/css/font-awesome.css";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 import App from "./App";
-import store from './redux/store'
+import store from './store/store'
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
